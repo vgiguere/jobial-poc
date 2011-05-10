@@ -88,3 +88,10 @@ log4j = {
 
     warn   'org.mortbay.log'
 }
+
+// Added by the Janrain plugin:
+janrain.apiKey = "c8a93c00193c0d75cb9e23bc274eaf740128ef0b"
+janrain.applicationID = "jkdmfogfaigkpilgggle"
+janrain.applicationDomain = "https://jobialpoc.rpxnow.com/"
+janrain.tokenUrl = "http://localhost:8080/jobial/token"
+// janrain.tokenUrl = "${grails.serverURL}/token" GRAILS-6848

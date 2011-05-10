@@ -1,3 +1,4 @@
+<%@ taglib prefix="janrain" uri="http://janrain4j.googlecode.com/tags" %>
 <html>
     <head>
         <title>Welcome to Grails</title>
@@ -9,7 +10,6 @@
             margin-left:30px;
             width:228px;
             float:left;
-
         }
         .homePagePanel * {
             margin:0px;
@@ -33,7 +33,6 @@
             height:20px;
             margin:0px;
         }
-
         .homePagePanel .panelTop {
             background: url(images/leftnav_top.png) no-repeat top;
             height:11px;
@@ -68,13 +67,10 @@
                     </ul>
                     <h1>Installed Plugins</h1>
                     <ul>
-                        <g:set var="pluginManager"
-                               value="${applicationContext.getBean('pluginManager')}"></g:set>
-
+                        <g:set var="pluginManager" value="${applicationContext.getBean('pluginManager')}"></g:set>
                         <g:each var="plugin" in="${pluginManager.allPlugins}">
                             <li>${plugin.name} - ${plugin.version}</li>
                         </g:each>
-
                     </ul>
                 </div>
                 <div class="panelBtm"></div>
@@ -82,19 +78,9 @@
         </div>
         <div id="pageBody">
             <h1>Welcome to Grails</h1>
-            <p>Congratulations, you have successfully started your first Grails application! At the moment
-            this is the default page, feel free to modify it to either redirect to a controller or display whatever
-            content you may choose. Below is a list of controllers that are currently deployed in this application,
-            click on each to execute its default action:</p>
-
-            <div id="controllerList" class="dialog">
-                <h2>Available Controllers:</h2>
-                <ul>
-                    <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                        <li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
-                    </g:each>
-                </ul>
-            </div>
+            <p>Congratulations, you have successfully setup the Janrain quickstart application! Make sure you have
+            entered the correct Janrain settings in Config.groovy.</p>
+            <p style="margin-top:15px"><janrain:signInEmbedded /></p>
         </div>
     </body>
 </html>

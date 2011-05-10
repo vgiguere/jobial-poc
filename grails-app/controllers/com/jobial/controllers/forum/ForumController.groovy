@@ -6,7 +6,4 @@ class ForumController {
         render (view:'index', model:[])
 
     }
-
-
-
 }
