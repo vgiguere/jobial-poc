@@ -1,4 +1,4 @@
-<%@ page import="com.jobial.domain.profile.OnetCode; com.jobial.domain.profile.SexualOrientation; com.jobial.domain.profile.Religion; com.jobial.domain.Profile" %>
+<%@ page import="com.jobial.domain.profile.City; com.jobial.domain.profile.Ethnicity; com.jobial.domain.profile.Seniority; com.jobial.domain.profile.Education; com.jobial.domain.profile.Gender; com.jobial.domain.profile.OnetCode; com.jobial.domain.profile.SexualOrientation; com.jobial.domain.profile.Religion; com.jobial.domain.Profile" %>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -14,6 +14,13 @@
 </div>
 <div class="body">
     <h1>Search Matching Profiles</h1>
+
+
+    <g:if test="${message}">
+        <h2>${message}</h2>
+    </g:if>
+
+
     <g:if test="${flash.message}">
         <div class="message">${flash.message}</div>
     </g:if>
@@ -34,7 +41,7 @@
                         <label for="religion"><g:message code="profile.religion.label" default="Religion"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'religion', 'errors')}">
-                        <g:select from="${Religion.values()}" noSelection="${['null':'Select a religion...']}"/>
+                        <g:select name="religion" id="www" from="${Religion.values()}" noSelection="${['':'Select a religion...']}" value="${selection?.religion}"/>
                     </td>
                 </tr>
 
@@ -43,7 +50,7 @@
                         <label for="sexualOrientation"><g:message code="profile.sexualOrientation.label" default="Sexual Orientation"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'sexualOrientation', 'errors')}">
-                        <g:select from="${SexualOrientation.values()}" noSelection="${['null':'Select a sexual orientation...']}"/>
+                        <g:select name="sexualOrientation" id="yyy" from="${SexualOrientation.values()}" noSelection="${['':'Select a sexual orientation...']}" value="${selection?.sexualOrientation}"/>
                     </td>
                 </tr>
 
@@ -52,7 +59,7 @@
                         <label for="profession"><g:message code="profile.profession.label" default="Profession"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'profession', 'errors')}">
-                        <g:select from="${OnetCode.values()}" noSelection="${['null':'Select a profession...']}"/>
+                        <g:select name="profession" id="zzz" from="${OnetCode.values()}" noSelection="${['':'Select a profession...']}" value="${selection?.profession}"/>
                     </td>
                 </tr>
 
@@ -61,7 +68,7 @@
                         <label for="gender"><g:message code="profile.gender.label" default="Gender"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'gender', 'errors')}">
-
+                       <g:select name="gender" id="zzz" from="${Gender.values()}" noSelection="${['':'Select a gender...']}" value="${selection?.gender}"/>
                     </td>
                 </tr>
 
@@ -71,7 +78,7 @@
                         <label for="education"><g:message code="profile.education.label" default="Education"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'education', 'errors')}">
-
+                       <g:select name="education" id="zzz" from="${Education.values()}" noSelection="${['':'Select an education level...']}" value="${selection?.education}"/>
                     </td>
                 </tr>
 
@@ -79,8 +86,8 @@
                     <td valign="top" class="name">
                         <label for="seniority"><g:message code="profile.seniority.label" default="Seniority"/></label>
                     </td>
-                    <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'seniority', 'errors')}">
-
+                    <td valign="top" class="seniority ${hasErrors(bean: profileInstance, field: 'seniority', 'errors')}">
+                       <g:select name="seniority" id="zzz" from="${Seniority.values()}" noSelection="${['':'Select an seniority  level...']}" value="${selection?.seniority}"/>
                     </td>
                 </tr>
 
@@ -89,7 +96,7 @@
                         <label for="ethnicity"><g:message code="profile.ethnicity.label" default="Ethnicity"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'ethnicity', 'errors')}">
-
+                        <g:select name="ethnicity" id="zzz" from="${Ethnicity.values()}" noSelection="${['':'Select an ethnicity...']}" value="${selection?.ethnicity}"/>
                     </td>
                 </tr>
 
@@ -98,7 +105,7 @@
                         <label for="city"><g:message code="profile.city.label" default="City"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: profileInstance, field: 'city', 'errors')}">
-
+                        <g:select name="city" id="zzz" from="${City.values()}" noSelection="${['':'Select a city...']}" value="${selection?.city}"/>
                     </td>
                 </tr>
 

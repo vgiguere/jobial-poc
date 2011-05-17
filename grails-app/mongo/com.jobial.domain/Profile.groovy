@@ -30,8 +30,8 @@ class Profile {
     OnetCode profession
     Seniority seniority
 
-    @Serialized
-    BigDecimal salary
+
+    int salary
 
     int yearsExperience
     City city

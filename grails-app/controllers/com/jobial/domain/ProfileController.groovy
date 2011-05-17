@@ -43,44 +43,85 @@ class ProfileController {
 
     def doSearch = {
 
+        def queryMap = [:]
 
+        if(params.religion){
+            queryMap.religion = params.religion
+        }
+
+         if(params.sexualOrientation){
+            queryMap.sexualOrientation = params.sexualOrientation
+        }
+        if(params.profession){
+            queryMap.profession = params.profession
+        }
+
+        if(params.gender){
+            queryMap.gender = params.gender
+        }
+         if(params.education){
+            queryMap.education = params.education
+        }
+         if(params.seniority){
+            queryMap.seniority = params.seniority
+        }
+         if(params.ethnicity){
+            queryMap.ethnicity = params.ethnicity
+        }
+         if(params.city){
+            queryMap.city = params.city
+        }
+
+        def count = Profile.count(queryMap)
+        if(count > 5000){
+            return render (view: 'search', model:[message:"There were $count profiles matching your criteria. Please refine your search", selection:params])
+        }
+
+
+        DBObject query = new BasicDBObject(queryMap)
 
 
         String mapFunction = """function(){
-        if(this.religion == ${params.religion}){
-            emit(this.email,{salary:this.salary})
-            }
+            emit('abcdef',{count:1, salary:this.salary})
         }"""
+
         String reduceFunction = """function(key,values){
-        var n = {count:0,sum:0}
+        var n = {count:0,salary:0}
         for ( var i = 0; i < values.length; i++ ){
-              n.sum += values[i].salary;
-              n.count ++;
+              n.salary += values[i].salary;
+              n.count += values[i].count;
              }
          return n
 
         }"""
 
-        String finalizeFunction = """function(key, value){
-               value.avg = value.sum / value.count;
-               return value;
+        String finalizeFunction = """function(key, res){
+        res.avg = (res.salary/res.count);
+        return res
+
 
        }"""
 
 
-        MapReduceCommand command = new MapReduceCommand(Profile.collection, mapFunction, reduceFunction, null, MapReduceCommand.OutputType.INLINE,null)
+        MapReduceCommand command = new MapReduceCommand(Profile.collection, mapFunction, reduceFunction, null, MapReduceCommand.OutputType.INLINE, query)
         command.setFinalize(finalizeFunction)
 
 
-        MapReduceOutput out =  Profile.collection.mapReduce(command)
+        MapReduceOutput out = Profile.collection.mapReduce(command)
 
-        for(DBObject o : out.results()){
 
-            println o
+
+        def averageSalary
+        for (DBObject o: out.results()) {
+              averageSalary = o.value.avg
+              count = o.value.count
         }
 
-        def profile = new Profile()
-        return [view:'search', profileInstance: profile]
+
+
+
+
+        return render (view: 'search', model:[message:"There were $count profiles matching your criteria. Their average salary is : $averageSalary", selection:params])
 
     }
 
@@ -166,7 +207,7 @@ class ProfileController {
 
     def generate = {
         Random salaryRandom = new Random()
-        (1..1000000).each {i ->
+        (1..100000).each {i ->
             Profile profile = new Profile()
             profile.email = "member_$i@publicprivatecareer.com"
             profile.city = randomFrom(City)
