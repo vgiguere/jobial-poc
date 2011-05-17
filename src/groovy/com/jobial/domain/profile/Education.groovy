@@ -8,6 +8,12 @@ package com.jobial.domain.profile
  * To change this template use File | Settings | File Templates.
  */
 public enum Education {
-    DROPOUT,HIGHSCHOOL,COLLEGE,UNIVERSITY,GRADUATE
+    DROPOUT(0.5d), HIGHSCHOOL(0.85), COLLEGE(1.0d), UNIVERSITY(1.2d), GRADUATE(1.40d)
+
+    private Education(double factor){
+        this.bigotFactor = factor
+    }
+
+    double bigotFactor
 
 }

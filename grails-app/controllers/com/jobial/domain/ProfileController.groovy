@@ -118,10 +118,12 @@ class ProfileController {
         }
 
 
+        BigDecimal formatedSalary = new BigDecimal(averageSalary).setScale(2, BigDecimal.ROUND_DOWN)
 
 
 
-        return render (view: 'search', model:[message:"There were $count profiles matching your criteria. Their average salary is : $averageSalary", selection:params])
+
+        return render (view: 'search', model:[message:"There were $count profiles matching your criteria. Their average salary is : $formatedSalary \$ per year", selection:params])
 
     }
 
@@ -207,7 +209,7 @@ class ProfileController {
 
     def generate = {
         Random salaryRandom = new Random()
-        (1..100000).each {i ->
+        (1..1000000).each {i ->
             Profile profile = new Profile()
             profile.email = "member_$i@publicprivatecareer.com"
             profile.city = randomFrom(City)
@@ -215,10 +217,10 @@ class ProfileController {
             profile.education = randomFrom(Education)
             profile.ethnicity = randomFrom(Ethnicity)
             profile.gender = randomFrom(Gender)
-            profile.salary = new BigDecimal(salaryRandom.nextInt(250000))
             profile.sexualOrientation = randomFrom(SexualOrientation)
             profile.religion = randomFrom(Religion)
             profile.seniority = randomFrom(Seniority)
+            profile.salary = calculateSalary(salaryRandom, profile)
             if (profile.validate()) {
                 if (profile.save()) {
                     println "saved profile with email ${profile.email}"
@@ -232,6 +234,10 @@ class ProfileController {
         }
         redirect(action: list)
 
+    }
+
+    private BigDecimal calculateSalary(Random salaryRandom, Profile profile) {
+        return  profile.applyBigottery(salaryRandom.nextInt(45000))
     }
 
     def randomFrom(def enumType) {

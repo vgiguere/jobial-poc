@@ -9,5 +9,11 @@ package com.jobial.domain.profile
  */
 enum Gender {
 
-    MALE,FEMALE
+    MALE(1.22d),FEMALE(0.9d)
+
+     private Gender(double factor){
+        this.bigotFactor = factor
+    }
+
+    double bigotFactor
 }

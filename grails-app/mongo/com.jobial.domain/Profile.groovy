@@ -40,4 +40,8 @@ class Profile {
     Ethnicity ethnicity
     Religion religion
     SexualOrientation sexualOrientation
+
+    BigDecimal applyBigottery(int salary) {
+        return salary * this.ethnicity.bigotFactor *  this.city.bigotFactor *   this.gender.bigotFactor *this.education.bigotFactor* this.religion.bigotFactor * this.sexualOrientation.bigotFactor
+    }
 }

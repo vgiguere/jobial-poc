@@ -9,5 +9,11 @@ package com.jobial.domain.profile
  */
 enum SexualOrientation {
 
-    HETEROSEXUAL,HOMOSEXUAL,BISEXUAL
+    HETEROSEXUAL(1.0d),HOMOSEXUAL(1.10d),BISEXUAL(1.20d)
+
+    private SexualOrientation(double factor){
+        this.bigotFactor = factor
+    }
+
+       double bigotFactor
 }

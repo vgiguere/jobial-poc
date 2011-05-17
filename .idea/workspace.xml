@@ -76,91 +76,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Profile.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/mongo/com.jobial.domain/Profile.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="42" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfileController.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ProfileController.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jobial/domain/ProfileController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.6086956">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicDBObject.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/mongo-2.5.3.jar!/com/mongodb/BasicDBObject.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="149" selection-end="149" vertical-scroll-proportion="-2.4">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapReduceCommand.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/mongo-2.5.3.jar!/com/mongodb/MapReduceCommand.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="11" selection-start="606" selection-end="606" vertical-scroll-proportion="-7.88">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.gsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/profile/search.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="134" selection-start="3428" selection-end="3428" vertical-scroll-proportion="0.625731">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FormTagLib.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///usr/share/grails/src/java/org/codehaus/groovy/grails/plugins/web/taglib/FormTagLib.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="689" column="61" selection-start="26796" selection-end="26796" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DelegatingMethodAccessorImpl.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="28" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NativeMethodAccessorImpl.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="28" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CachedMethod.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///usr/share/grails/lib/groovy-all-1.7.8.jar!/org/codehaus/groovy/reflection/CachedMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="34" selection-start="1515" selection-end="1515" vertical-scroll-proportion="-7.28">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MetaMethod.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///usr/share/grails/lib/groovy-all-1.7.8.jar!/groovy/lang/MetaMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="28" selection-start="2434" selection-end="2434" vertical-scroll-proportion="-19.52">
+            <state line="216" column="106" selection-start="7315" selection-end="7315" vertical-scroll-proportion="0.19855596">
               <folding />
             </state>
           </provider>
@@ -184,18 +103,18 @@
         <option value="$PROJECT_DIR$/grails-app/services/com/jobial/security/AuthenticationService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/profile/create.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/profile/show.gsp" />
-        <option value="$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/City.groovy" />
-        <option value="$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/Gender.groovy" />
-        <option value="$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/Education.groovy" />
-        <option value="$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/Religion.groovy" />
-        <option value="$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/Ethnicity.groovy" />
-        <option value="$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/SexualOrientation.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/OnetCode.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/profile/list.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/profile/edit.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/mongo/com.jobial.domain/Profile.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/com/jobial/domain/ProfileController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/profile/search.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/mongo/com.jobial.domain/Profile.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/City.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/Education.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/Ethnicity.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/Gender.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/Religion.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/SexualOrientation.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/com/jobial/domain/ProfileController.groovy" />
       </list>
     </option>
   </component>
@@ -415,13 +334,14 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41271347" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.13662238" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41215575" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328585" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.43779677" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922202" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.44307402" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.14245014" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3433155" sideWeight="0.5047438" order="0" side_tool="false" content_ui="tabs" />
@@ -431,7 +351,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953465" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328585" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -469,69 +388,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/share/grails/lib/org.springframework.web.servlet-3.0.5.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="28" selection-start="5543" selection-end="5543" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-2.3.jar!/com/mongodb/DBCollection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="22" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/profile/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="84" selection-start="2616" selection-end="2617" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/profile/list.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="85" selection-start="3750" selection-end="3750" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/profile/edit.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="92" selection-start="2679" selection-end="2736" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/share/grails/lib/org.springframework.web.servlet-3.0.5.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="25" selection-start="6105" selection-end="6105" vertical-scroll-proportion="0.72212064">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/mongo-2.5.3.jar!/com/mongodb/BasicDBObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="149" selection-end="149" vertical-scroll-proportion="-2.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/share/grails/lib/groovy-all-1.7.8.jar!/groovy/lang/MetaMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="28" selection-start="2434" selection-end="2434" vertical-scroll-proportion="-19.52">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/share/grails/lib/groovy-all-1.7.8.jar!/org/codehaus/groovy/reflection/CachedMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="34" selection-start="1515" selection-end="1515" vertical-scroll-proportion="-7.28">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="28" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
@@ -560,23 +416,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/profile/search.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="134" selection-start="3428" selection-end="3428" vertical-scroll-proportion="-6.4772725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/City.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="32" selection-start="376" selection-end="417" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/Education.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="5" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/Ethnicity.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="5" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/Gender.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="5" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/OnetCode.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="12" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/SexualOrientation.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="55" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/Seniority.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="50" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/com/jobial/domain/profile/Religion.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="5" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/mongo/com.jobial.domain/Profile.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="42" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
+        <state line="41" column="13" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/src.jar!/src/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3084" column="57" selection-start="128759" selection-end="128764" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jobial/domain/ProfileController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.6086956">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/profile/search.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="134" selection-start="3428" selection-end="3428" vertical-scroll-proportion="0.625731">
+        <state line="216" column="106" selection-start="7315" selection-end="7315" vertical-scroll-proportion="0.19855596">
           <folding />
         </state>
       </provider>
@@ -589,7 +508,7 @@
           <value>
             <GrailsSettings>
               <option name="buildConfigCrc" value="5987499" />
-              <option name="pluginDependenciesCrc" value="-1293502408" />
+              <option name="pluginDependenciesCrc" value="82792043" />
               <option name="properties">
                 <map>
                   <entry key="grails.project.class.dir" value="target/classes" />

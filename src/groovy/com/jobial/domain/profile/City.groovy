@@ -9,6 +9,13 @@ package com.jobial.domain.profile
  */
 public enum City {
 
-    TORONTO,MONTREAL,VANCOUVER,OTTAWA,CALGARY,EDMONTON,QUEBEC,WINNIPEG
+    TORONTO(1.35d),MONTREAL(1.10d),VANCOUVER(1.2d),OTTAWA(0.96d),CALGARY(1.25d),EDMONTON(0.90d),QUEBEC(0.85d),WINNIPEG(0.77d)
+
+
+    private City(double factor) {
+        this.bigotFactor = factor
+    }
+
+    double bigotFactor
 
 }
